@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Privacy Policy for Rekeep">
+  <title>Rekeep Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #edf5f1;
+      --surface: rgba(255, 255, 255, 0.82);
+      --ink: #0d3035;
+      --muted: #557074;
+      --line: rgba(13, 48, 53, 0.12);
+      --accent: #079fbd;
+      --accent-soft: #c6f8dd;
+      --notice: #fff3c4;
+      --notice-ink: #634b00;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #06181b;
+        --surface: rgba(13, 37, 41, 0.86);
+        --ink: #edf7f3;
+        --muted: #a5bcba;
+        --line: rgba(237, 247, 243, 0.12);
+        --accent: #55cee5;
+        --accent-soft: #123d3d;
+        --notice: #473b12;
+        --notice-ink: #ffe69a;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 85% 0%, rgba(7, 159, 189, 0.18), transparent 32rem),
+        radial-gradient(circle at 5% 35%, rgba(198, 248, 221, 0.20), transparent 28rem),
+        var(--background);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.68;
+    }
+
+    .privacy-page {
+      padding: 72px 0 96px;
+    }
+
+    .privacy-page > header,
+    .privacy-page > .summary,
+    .privacy-page > section,
+    .privacy-page > footer {
+      width: min(980px, 100%);
+      margin-inline: auto;
+    }
+
+    .privacy-page > header { margin-bottom: 42px; }
+
+    .policy-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 34px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 750;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .mark {
+      width: 26px;
+      height: 26px;
+      border: 2px solid currentColor;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .mark::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      border: 2px solid currentColor;
+      border-top-color: transparent;
+      border-radius: 3px;
+    }
+
+    .privacy-page h1,
+    .privacy-page h2 {
+      font-family: ui-serif, "New York", Georgia, serif;
+      letter-spacing: -0.025em;
+    }
+
+    .privacy-page h1 {
+      max-width: 680px;
+      margin: 0 0 16px;
+      font-size: clamp(44px, 8vw, 76px);
+      line-height: 1.02;
+      font-weight: 600;
+    }
+
+    .privacy-page h2 {
+      margin: 48px 0 12px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    .privacy-page h3 {
+      margin: 28px 0 6px;
+      font-size: 18px;
+    }
+
+    p, ul { margin: 0 0 18px; }
+    ul { padding-left: 24px; }
+    li + li { margin-top: 8px; }
+
+    .lede {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .meta {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 34px 0 48px;
+    }
+
+    .summary div {
+      min-height: 118px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--surface);
+      backdrop-filter: blur(18px);
+    }
+
+    .summary strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+
+    .summary span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    section {
+      padding-top: 2px;
+      border-top: 1px solid var(--line);
+    }
+
+    .privacy-page a { color: var(--accent); }
+
+    .notice {
+      margin: 30px 0;
+      padding: 18px 20px;
+      border-radius: 16px;
+      background: var(--notice);
+      color: var(--notice-ink);
+      font-size: 15px;
+    }
+
+    .privacy-page footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 680px) {
+      .privacy-page { padding-top: 42px; }
+      .summary { grid-template-columns: 1fr; }
+      .summary div { min-height: auto; }
+    }
+  </style>
+  <link rel="icon" href="assets/rekeep-icon.png">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="assets/rekeep-icon.png" alt="">Rekeep</a>
+      <div class="nav-links"><a href="index.html">Product</a><a href="support.html">Support</a><a href="privacy-policy.html" aria-current="page">Privacy</a></div>
+    </nav>
+  </header>
+  <main class="shell privacy-page">
+    <header>
+      <div class="policy-brand"><span class="mark" aria-hidden="true"></span>Rekeep</div>
+      <h1>Privacy, kept simple.</h1>
+      <p class="lede">Rekeep is designed to help you remember what you own without turning your belongings into advertising data. This policy explains what the app accesses, where your information is stored, and the choices available to you.</p>
+      <p class="meta"><strong>Effective date:</strong> July 18, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> July 18, 2026</p>
+    </header>
+
+    <div class="summary" aria-label="Privacy summary">
+      <div><strong>No advertising or tracking</strong><span>Rekeep does not use advertising SDKs, cross-app tracking, or behavioral profiling.</span></div>
+      <div><strong>On-device photo analysis</strong><span>Recognition and smart cutout processing run on your device.</span></div>
+      <div><strong>You control your records</strong><span>You can edit, export, or delete your items and their associated information.</span></div>
+    </div>
+
+    <section>
+      <h2>1. Who We Are</h2>
+      <p>This Privacy Policy applies to the Rekeep application for iPhone and iPad, including its Home Screen widgets (collectively, “Rekeep” or the “App”).</p>
+      <p>Rekeep is provided by <strong>GuoLiang Yang</strong> (“we,” “us,” or “our”).</p>
+    </section>
+
+    <section>
+      <h2>2. Information You Add to Rekeep</h2>
+      <p>You may choose to store information about your belongings in the App, including:</p>
+      <ul>
+        <li>Item names, categories, brands, locations, notes, and custom collections;</li>
+        <li>Photos you take or select;</li>
+        <li>Purchase dates and prices;</li>
+        <li>Usage history, rediscovery status, lifecycle decisions, and disposition details;</li>
+        <li>Maintenance plans, reminders, and completion records; and</li>
+        <li>App preferences, such as appearance, sorting, layout, and reminder settings.</li>
+      </ul>
+      <p>This information is created and controlled by you. Rekeep does not require an account and does not ask you to provide a name, email address, phone number, or other account profile information.</p>
+    </section>
+
+    <section>
+      <h2>3. Device Permissions and System Features</h2>
+
+      <h3>Camera</h3>
+      <p>Rekeep requests camera access only when you choose to take a photo of an item. Camera access is used solely to capture the image you requested. You can deny or later revoke camera access in the Settings app. Other cataloging features remain available without camera access.</p>
+
+      <h3>Photo Selection</h3>
+      <p>Rekeep uses Apple’s system photo picker. The App receives only the photos you explicitly select; it does not request unrestricted access to browse your entire photo library.</p>
+
+      <h3>Notifications</h3>
+      <p>If you enable rediscovery or maintenance reminders, Rekeep requests permission to send local notifications. Reminder scheduling is performed on your device. You can disable reminders inside Rekeep or revoke notification permission in the Settings app at any time.</p>
+
+      <h3>Home Screen Widgets</h3>
+      <p>To display a daily item in a widget, the main App shares a limited snapshot through an Apple App Group. This snapshot may include an item identifier, item name, category, location, thumbnail image, and number of unused days. The shared snapshot is available only to Rekeep and its widget extension on your device.</p>
+    </section>
+
+    <section>
+      <h2>4. Smart Photo Analysis</h2>
+      <p>Rekeep may analyze selected item photos to suggest a name, category, brand, or recognized text and to provide Smart Cutout functionality. This processing uses Apple frameworks and runs on your device. Rekeep does not send item photos or recognition results to our servers or to a third-party artificial intelligence provider.</p>
+      <p>Suggestions are optional and may be inaccurate. You decide whether to accept, edit, or ignore them.</p>
+    </section>
+
+    <section>
+      <h2>5. Local Storage, iCloud, and Backups</h2>
+
+      <h3>On-device storage</h3>
+      <p>Your Rekeep catalog is stored on your device using Apple’s local data technologies.</p>
+
+      <h3>iCloud</h3>
+      <p>When iCloud is available for Rekeep, Apple’s CloudKit service may synchronize your catalog and photos between devices signed in to your Apple Account. iCloud data is processed by Apple under Apple’s terms and privacy policy. We do not operate a separate server that receives a copy of your Rekeep catalog for advertising, analytics, or profiling.</p>
+      <p>You can manage iCloud access through your device’s Apple Account and iCloud settings. Disabling iCloud may stop future synchronization but may not automatically remove information already stored in iCloud.</p>
+
+      <h3>Exported backups</h3>
+      <p>If you export a backup, Rekeep creates a file containing your catalog, photos, usage records, locations, maintenance information, and settings. You choose where that file is saved or shared. After export, the file is controlled by you and by the storage or sharing service you selected. Keep exported backups secure because they may contain personal information about your belongings.</p>
+    </section>
+
+    <section>
+      <h2>6. Information We Collect</h2>
+      <p>We do not operate advertising, analytics, account, or tracking servers for Rekeep. We do not collect your catalog into developer-controlled systems, sell personal information, rent personal information, or share your catalog with data brokers or advertisers.</p>
+      <p>Rekeep does not use third-party advertising SDKs and does not track you across apps or websites owned by other companies.</p>
+      <p>Apple may independently process information necessary to provide the App Store, iCloud, notification delivery infrastructure, crash diagnostics you have chosen to share with developers through Apple, and other operating-system services. Apple’s processing is governed by Apple’s own privacy policies and your device settings.</p>
+    </section>
+
+    <section>
+      <h2>7. Data Retention and Deletion</h2>
+      <p>Information stored locally remains on your device until you delete individual records, restore a backup that replaces the current catalog, erase the App’s data, or uninstall the App. Removing the App generally removes its local data, subject to the behavior of the operating system and any device backup you maintain.</p>
+      <p>If iCloud synchronization is in use, synchronized data may remain in your iCloud account after the App is removed from one device. You can manage or delete relevant iCloud data using Apple’s iCloud storage controls, or contact us for guidance.</p>
+      <p>Because Rekeep does not require a developer-operated account and we do not hold a server-side copy of your catalog, we normally cannot identify or delete data stored only on your device or in your personal iCloud account on your behalf.</p>
+    </section>
+
+    <section>
+      <h2>8. Your Choices</h2>
+      <p>You may:</p>
+      <ul>
+        <li>Edit or delete item records inside Rekeep;</li>
+        <li>Choose which photos to provide;</li>
+        <li>Revoke camera or notification access in system Settings;</li>
+        <li>Enable or disable reminder features inside the App;</li>
+        <li>Manage Rekeep’s iCloud access through your Apple Account settings;</li>
+        <li>Export a backup of your information; and</li>
+        <li>Contact us with a privacy question or request.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9. Security</h2>
+      <p>Rekeep relies on Apple platform protections, including application sandboxing, system permission controls, App Group access controls, and iCloud security. We also limit processing to the information needed to provide the features you choose to use.</p>
+      <p>No method of storage or transmission is completely secure. You are responsible for protecting access to your device, Apple Account, and any backup files you export.</p>
+    </section>
+
+    <section>
+      <h2>10. Children’s Privacy</h2>
+      <p>Rekeep is a general-audience organization tool and is not directed to children under 13. We do not knowingly collect personal information from children into developer-controlled systems. If you believe a child has provided information to us directly, contact us so we can address the request.</p>
+    </section>
+
+    <section>
+      <h2>11. International Use</h2>
+      <p>Apple may process iCloud and platform-service data in accordance with its own regional infrastructure, contractual terms, and privacy policy. If you use Rekeep outside your home country, those services may involve processing in other jurisdictions.</p>
+    </section>
+
+    <section>
+      <h2>12. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy when Rekeep’s features, legal requirements, or data practices change. We will update the “Last updated” date at the top of this page. If a change materially affects how the App handles information, we will provide additional notice where appropriate.</p>
+    </section>
+
+    <section>
+      <h2>13. Contact Us</h2>
+      <p>If you have questions, privacy requests, or concerns about Rekeep, contact:</p>
+      <p><strong>GuoLiang Yang</strong><br>
+      Email: <a href="mailto:yaien6530@gmail.com">yaien6530@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>© 2026 GuoLiang Yang. Rekeep and this privacy policy may be updated as the App evolves.</p>
+    </footer>
+  </main>
+</body>
+</html>
